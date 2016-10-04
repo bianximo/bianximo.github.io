@@ -108,7 +108,7 @@
 <meta property="og:image" content="https://github.com/bianximo/images/blob/master/8.png?raw=true">
 <meta property="og:image" content="https://xuanwo.org/imgs/opinion/Github-new-repo-look-like.png">
 <meta property="og:image" content="https://xuanwo.org/imgs/opinion/Github-pages.png">
-<meta property="og:updated_time" content="2016-10-04T07:47:46.279Z">
+<meta property="og:updated_time" content="2016-10-04T07:50:25.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在github上搭建个人博客教程">
 <meta name="twitter:description" content="写在前面首先感谢大家参加助力课堂，参加我的这门课程，其实课上我也说过了，我自己也是刚刚接触github pages没多久，觉得有这么一个简易而且免费的平台，不推荐给大家实在可惜，加上上学期也在助力课堂当过讲师（虽然第一次参加比较失败…听课人数个位数），但是这并不能阻挡我！
@@ -330,7 +330,7 @@
         <p><img src="https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-227954.jpg" alt=""></p>
 <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>首先感谢大家参加助力课堂，参加我的这门课程，其实课上我也说过了，我自己也是刚刚接触github pages没多久，觉得有这么一个简易而且免费的平台，不推荐给大家实在可惜，加上上学期也在助力课堂当过讲师（虽然第一次参加比较失败…听课人数个位数），但是这并不能阻挡我！</p>
 <p>为了世界的和平，我又回来了！希望大家能真正学到一些知识，可以亲手搭出一个免费的博客，自豪感是满满的哦~</p>
-<h1 id="关于github-pages"><a href="#关于github-pages" class="headerlink" title="关于github pages"></a>关于github pages</h1><p>[github pages官方介绍]<a href="https://pages.github.com/" target="_blank" rel="external">https://pages.github.com/</a><br><a id="more"></a></p>
+<h1 id="关于github-pages"><a href="#关于github-pages" class="headerlink" title="关于github pages"></a>关于github pages</h1><p><a href="https://pages.github.com/" target="_blank" rel="external">github pages官方介绍</a><br><a id="more"></a></p>
 <blockquote>
 <p>Websites for you and your projects.<br>Hosted directly from your GitHub repository.<br>Just edit, push, and your changes are live.</p>
 </blockquote>
@@ -339,16 +339,15 @@
 <p>你看到的“博客引擎”其实是页面生成器，即把你写的模版等动态代码转成静态页面，然后才能放到Github上。所以，github pages并不是万能的。</p>
 <p><strong>敲黑板！！！下面这段很关键！</strong><br>由于github pages本质上还是一个repository，所以它是可以被整个clone的！！所以用来当企业网站还是不太合适，但同时大家也可以利用这个特性，clone下来自己喜欢的博客来看他们是怎么搭建的~</p>
 <p><strong>下面我们正式开始！</strong></p>
-<p>#环境配置</p>
-<p>在这里我就只讲解windows下的环境配置，至于其他系统的配置方法都大同小异，大家参照着下面的来吧~</p>
-<p>##1.配置Node.js<br>首先下载安装包，希望大家自行去官网下载<strong>最新版</strong>的安装包，这也是一项必不可少的技能哦~一定注意32位和64位要选择对，如果不知道自己电脑是32位还是64位的右键–&gt;我的电脑–&gt;属性 就可以看到了。如果嫌麻烦的话就直接点下面的链接下载吧！</p>
+<h1 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h1><p>在这里我就只讲解windows下的环境配置，至于其他系统的配置方法都大同小异，大家参照着下面的来吧~</p>
+<h2 id="1-配置Node-js"><a href="#1-配置Node-js" class="headerlink" title="1.配置Node.js"></a>1.配置Node.js</h2><p>首先下载安装包，希望大家自行去官网下载<strong>最新版</strong>的安装包，这也是一项必不可少的技能哦~一定注意32位和64位要选择对，如果不知道自己电脑是32位还是64位的右键–&gt;我的电脑–&gt;属性 就可以看到了。如果嫌麻烦的话就直接点下面的链接下载吧！</p>
 <ul>
 <li><a href="https://nodejs.org/dist/v4.6.0/node-v4.6.0-x86.msi" target="_blank" rel="external">Windows Installer 32-bit</a></li>
 <li><a href="https://nodejs.org/dist/v4.6.0/node-v4.6.0-x64.msi" target="_blank" rel="external">Windows Installer 64-bit</a></li>
 </ul>
 <p>下载完成后双击打开安装包，如图所示：<img src="https://github.com/bianximo/images/blob/master/1.png?raw=true" alt="Node.js安装界面"><br><img src="https://github.com/bianximo/images/blob/master/2.png?raw=true" alt="Node.js安装界面"><br>按照默认的设置，一路next下去就可以很快安装好了。安装好之后，我们按住<em>win+R</em>打开运行，输入<em>cmd</em>，<br><img src="https://xuanwo.org/imgs/opinion/win-run.png" alt="Windows的运行界面">打开命令行窗口，分别输入：<br><code>node -v
 npm -v</code><br>如果结果和下图相似，那么说明Node.js的安装已经成功，如果不相同，那么就需要检查自己的安装过程是否有问题了。<br><img src="https://github.com/bianximo/images/blob/master/3.png?raw=true" alt="Node.js安装测试"><br><strong>到此Node.js就安装好了</strong></p>
-<p>##2.配置git<br>和Node.js安装一样，前往git官网下载相应版本即可。</p>
+<h2 id="2-配置git"><a href="#2-配置git" class="headerlink" title="2.配置git"></a>2.配置git</h2><p>和Node.js安装一样，前往git官网下载相应版本即可。</p>
 <ul>
 <li><a href="https://github-cloud.s3.amazonaws.com/releases/23216272/c9507cb6-71bd-11e6-92c2-e9f873a99794.exe?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20161004%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20161004T071354Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=443c779c6ba18d6a7b68e72f96e513f93bec7cab0b184d654aa8e4d3b5d779c5&amp;X-Amz-SignedHeaders=host&amp;actor_id=13324167&amp;response-content-disposition=attachment%3B%20filename%3DGit-2.10.0-32-bit.exe&amp;response-content-type=application%2Foctet-stream" target="_blank" rel="external">git installer 32-bit</a></li>
 <li><a href="https://github-cloud.s3.amazonaws.com/releases/23216272/7830705c-71bd-11e6-946b-88a3a412ab2f.exe?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20161004%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20161004T071348Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=2db321f725bd80c70641d29aacc2b1e64129a1c5ad37c21f7e3c8b3b5b47bf15&amp;X-Amz-SignedHeaders=host&amp;actor_id=13324167&amp;response-content-disposition=attachment%3B%20filename%3DGit-2.10.0-64-bit.exe&amp;response-content-type=application%2Foctet-stream" target="_blank" rel="external">git installer 64-bit</a></li>
@@ -359,14 +358,13 @@ npm -v</code><br>如果结果和下图相似，那么说明Node.js的安装已�
 </blockquote>
 <p>一样的，我们来检查一下Git是不是安装正确了，打开命令行，输入：<br><code>git --version</code></p>
 <p>如果结果如下图所示，则说明安装正确，可以进行下一步了，如果不正确，则需要回头检查自己的安装过程。<br><img src="https://github.com/bianximo/images/blob/master/4.png?raw=true" alt="检查git安装"><br><strong>至此git的安装就结束了</strong></p>
-<p>#github账号的配置</p>
-<p>##1.账号注册<br>首先，前往<a href="github.com">github官网</a>，注册一个github账号。<br><img src="https://github.com/bianximo/images/blob/master/5.png?raw=true" alt="点击sign up来注册账号"></p>
+<h1 id="github账号的配置"><a href="#github账号的配置" class="headerlink" title="github账号的配置"></a>github账号的配置</h1><h2 id="1-账号注册"><a href="#1-账号注册" class="headerlink" title="1.账号注册"></a>1.账号注册</h2><p>首先，前往<a href="github.com">github官网</a>，注册一个github账号。<br><img src="https://github.com/bianximo/images/blob/master/5.png?raw=true" alt="点击sign up来注册账号"></p>
 <p><img src="https://github.com/bianximo/images/blob/master/6.png?raw=true" alt="建议起一个简单又有代表性的Username,并牢记密码"></p>
 <p>注册成功之后便可以登录自己的github账号了，关于github的其他应用，有机会我也会与大家分享的~</p>
-<p>##2.新建仓库<br>点击右下方的New repository新建一个仓库，<br><img src="https://github.com/bianximo/images/blob/master/7.png?raw=true" alt="新建github仓库"></p>
+<h2 id="2-新建仓库"><a href="#2-新建仓库" class="headerlink" title="2.新建仓库"></a>2.新建仓库</h2><p>点击右下方的New repository新建一个仓库，<br><img src="https://github.com/bianximo/images/blob/master/7.png?raw=true" alt="新建github仓库"></p>
 <p>在下一个界面中，填入你的仓库名称,<strong>注意！！！</strong>一定要像图中的格式一样，为<strong>XXXXX.github.io</strong>，其中<strong>XXXXX</strong>代表你的<strong>Username</strong>，且一个github账户只能有<strong>一</strong>个io仓库来作为github pages。由于我已经有一个同名仓库了，所以系统会提示我already exists<br><img src="https://github.com/bianximo/images/blob/master/8.png?raw=true" alt="新建仓库"><br>在Description里你可以填入一些描述，当然不填也可以，在下面的Public和Private选项中你可以选择公开或私密，以防止以后有人clone你的主页。</p>
 <p>正确创建之后，你将会看到如下界面：<img src="https://xuanwo.org/imgs/opinion/Github-new-repo-look-like.png" alt="新代码库的界面"><br><a href="https://xuanwo.org/2015/03/26/hexo-intor/#开启gh-pages功能" target="_blank" rel="external"></a></p>
-<p>##3.开启gh-pages功能<br>点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：<img src="https://xuanwo.org/imgs/opinion/Github-pages.png" alt="Github pages">点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面。<br>如果你的配置没有问题，那么大约15分钟之后，<strong>yourname.github.io</strong>这个网址就可以正常访问了~<br>如果<strong>yourname.github.io</strong>已经可以正常访问了，那么Github的配置就完成了。</p>
+<h2 id="3-开启gh-pages功能"><a href="#3-开启gh-pages功能" class="headerlink" title="3.开启gh-pages功能"></a>3.开启gh-pages功能</h2><p>点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：<img src="https://xuanwo.org/imgs/opinion/Github-pages.png" alt="Github pages">点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面。<br>如果你的配置没有问题，那么大约15分钟之后，<strong>yourname.github.io</strong>这个网址就可以正常访问了~<br>如果<strong>yourname.github.io</strong>已经可以正常访问了，那么Github的配置就完成了。</p>
 
       
     </div>
@@ -555,7 +553,7 @@ npm -v</code><br>如果结果和下图相似，那么说明Node.js的安装已�
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于github-pages"><span class="nav-number">2.</span> <span class="nav-text">关于github pages</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于github-pages"><span class="nav-number">2.</span> <span class="nav-text">关于github pages</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置"><span class="nav-number">3.</span> <span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置Node-js"><span class="nav-number">3.1.</span> <span class="nav-text">1.配置Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-配置git"><span class="nav-number">3.2.</span> <span class="nav-text">2.配置git</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github账号的配置"><span class="nav-number">4.</span> <span class="nav-text">github账号的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-账号注册"><span class="nav-number">4.1.</span> <span class="nav-text">1.账号注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-新建仓库"><span class="nav-number">4.2.</span> <span class="nav-text">2.新建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-开启gh-pages功能"><span class="nav-number">4.3.</span> <span class="nav-text">3.开启gh-pages功能</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
