@@ -108,7 +108,13 @@
 <meta property="og:image" content="https://github.com/bianximo/images/blob/master/8.png?raw=true">
 <meta property="og:image" content="https://xuanwo.org/imgs/opinion/Github-new-repo-look-like.png">
 <meta property="og:image" content="https://xuanwo.org/imgs/opinion/Github-pages.png">
-<meta property="og:updated_time" content="2016-10-04T07:50:25.467Z">
+<meta property="og:image" content="https://xuanwo.org/imgs/opinion/npm-install-hexo-cli.png">
+<meta property="og:image" content="https://xuanwo.org/imgs/opinion/hexo-v.png">
+<meta property="og:image" content="https://xuanwo.org/imgs/opinion/hexo-init.png">
+<meta property="og:image" content="https://xuanwo.org/imgs/opinion/hexo-g.png">
+<meta property="og:image" content="https://xuanwo.org/imgs/opinion/hexo-first-time.png">
+<meta property="og:image" content="https://github.com/bianximo/images/blob/master/%E7%BD%91%E7%AB%99.png?raw=true">
+<meta property="og:updated_time" content="2016-10-04T08:34:08.819Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在github上搭建个人博客教程">
 <meta name="twitter:description" content="写在前面首先感谢大家参加助力课堂，参加我的这门课程，其实课上我也说过了，我自己也是刚刚接触github pages没多久，觉得有这么一个简易而且免费的平台，不推荐给大家实在可惜，加上上学期也在助力课堂当过讲师（虽然第一次参加比较失败…听课人数个位数），但是这并不能阻挡我！
@@ -365,6 +371,36 @@ npm -v</code><br>如果结果和下图相似，那么说明Node.js的安装已�
 <p>在下一个界面中，填入你的仓库名称,<strong>注意！！！</strong>一定要像图中的格式一样，为<strong>XXXXX.github.io</strong>，其中<strong>XXXXX</strong>代表你的<strong>Username</strong>，且一个github账户只能有<strong>一</strong>个io仓库来作为github pages。由于我已经有一个同名仓库了，所以系统会提示我already exists<br><img src="https://github.com/bianximo/images/blob/master/8.png?raw=true" alt="新建仓库"><br>在Description里你可以填入一些描述，当然不填也可以，在下面的Public和Private选项中你可以选择公开或私密，以防止以后有人clone你的主页。</p>
 <p>正确创建之后，你将会看到如下界面：<img src="https://xuanwo.org/imgs/opinion/Github-new-repo-look-like.png" alt="新代码库的界面"><br><a href="https://xuanwo.org/2015/03/26/hexo-intor/#开启gh-pages功能" target="_blank" rel="external"></a></p>
 <h2 id="3-开启gh-pages功能"><a href="#3-开启gh-pages功能" class="headerlink" title="3.开启gh-pages功能"></a>3.开启gh-pages功能</h2><p>点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages，如图：<img src="https://xuanwo.org/imgs/opinion/Github-pages.png" alt="Github pages">点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面。<br>如果你的配置没有问题，那么大约15分钟之后，<strong>yourname.github.io</strong>这个网址就可以正常访问了~<br>如果<strong>yourname.github.io</strong>已经可以正常访问了，那么Github的配置就完成了。</p>
+<h1 id="配置Hexo"><a href="#配置Hexo" class="headerlink" title="配置Hexo"></a>配置Hexo</h1><h2 id="1-什么是hexo？"><a href="#1-什么是hexo？" class="headerlink" title="1.什么是hexo？"></a>1.什么是hexo？</h2><p>这是hexo的主页：<a href="https://www.npmjs.com/package/hexo" target="_blank" rel="external">hexo主页</a>，</p>
+<blockquote>
+<p>官方对hexo的解释是：A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
+</blockquote>
+<p>其实hexo就是一个作业本，但是它的款式却多种多样（主题），它可以帮你生成你的每一篇日志，并且可以很简单的帮你发布~下面我们开始配置它。</p>
+<h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2.安装Hexo"></a>2.安装Hexo</h2><p>在本地磁盘的一个合适的位置新建一个文件夹，它就是你博客的本地映射了，命名随意，最好不要用中文。然后双击进入这个文件夹，按住<strong>shift+鼠标右键，</strong>选择“在此处打开命令行”，当然你也可以用win+R，输入cmd，然后一步一步的cd到这个文件夹的目录，但是需要耗费很多时间啊！这也是一个省时省力的小技巧~<br>接下来，输入：<br><code>npm install hexo-cli -g</code></p>
+<p>然后你将会看到:<img src="https://xuanwo.org/imgs/opinion/npm-install-hexo-cli.png" alt="安装hexo-cli">可能你会看到一个WARN，但是不用担心，这不会影响你的正常使用。然后输入</p>
+<p>npm install hexo –save</p>
+<p>然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。在命令行中输入：<br>hexo -v</p>
+<p>如果你看到了如图文字，则说明已经安装成功了。<img src="https://xuanwo.org/imgs/opinion/hexo-v.png" alt="Hexo测试"><br><a href="https://xuanwo.org/2015/03/26/hexo-intor/#初始化Hexo" target="_blank" rel="external"></a></p>
+<h2 id="3-初始化Hexo"><a href="#3-初始化Hexo" class="headerlink" title="3.初始化Hexo"></a>3.初始化Hexo</h2><p>接着上面的操作，输入：<br>hexo init</p>
+<p>如图：<img src="https://xuanwo.org/imgs/opinion/hexo-init.png" alt="hexo初始化">然后输入：<br>npm install</p>
+<p>之后npm将会自动安装你需要的组件，只需要等待npm操作即可。<br><a href="https://xuanwo.org/2015/03/26/hexo-intor/#首次体验Hexo" target="_blank" rel="external"></a>首次体验Hexo<br>继续操作，同样是在命令行中，输入：<br>hexo g</p>
+<p>如图：<img src="https://xuanwo.org/imgs/opinion/hexo-g.png" alt="hexo渲染">然后输入：<br>hexo s</p>
+<p>然后会提示：<br>INFO Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.</p>
+<p>在浏览器中打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br>，你将会看到：<img src="https://xuanwo.org/imgs/opinion/hexo-first-time.png" alt="hexo初体验">到目前为止，Hexo在本地的配置已经全都结束了。</p>
+<h1 id="使用Hexo"><a href="#使用Hexo" class="headerlink" title="使用Hexo"></a>使用Hexo</h1><blockquote>
+<p>在配置Hexo的过程中，请使用Editplus或者sublim等文本编辑器，千万不要用windows自带的记事本！</p>
+</blockquote>
+<h2 id="1-修改全局配置文件"><a href="#1-修改全局配置文件" class="headerlink" title="1.修改全局配置文件"></a>1.修改全局配置文件</h2><p>此时打开你的本地文件夹，会发现里面已经有很多东西了，我们会一步一步的告诉大家这些都有什么作用。<br>首先我们可以修改全局配置文件，右键文件<strong>_config.yml</strong>，用你的文本编辑器打开它，进行下面的这些选项的设置。<br><em>此段落引用自<a href="http://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">Hexo官方文档</a></em><br><img src="https://github.com/bianximo/images/blob/master/%E7%BD%91%E7%AB%99.png?raw=true" alt="修改全局配置文件"><br>这里的配置大多不用现在就更改，等到后面我们套用主题时再修改也不迟~先进行下一步吧！</p>
+<h2 id="2-hexo部署到github-pages"><a href="#2-hexo部署到github-pages" class="headerlink" title="2.hexo部署到github pages"></a>2.hexo部署到github pages</h2><p>这是目前为止非常关键的一步，也是重点和难点，大家如果遇到困难了一定要多问哦！</p>
+<p>首先，你需要为自己配置身份信息，打开命令行，然后输入：<br><code>git config --global user.name &quot;yourname&quot;
+git config --global user.email &quot;youremail&quot;</code><br>其中，<strong>yourname</strong>和<strong>youremail</strong>分别为你github的<strong>username</strong>和<strong>邮箱</strong></p>
+<p>接下来使用git方式进行部署，执行<br><code>npm install hexo-deployer-git --save</code><br>来安装所需的插件</p>
+<p>同样在_config.yml文件中，找到Deployment，然后按照如下修改：<br><code>deploy: 
+    type: git 
+    repo: git@github.com:yourname/yourname.github.io.git 
+    branch: master</code><br>注意用你的<strong>Username</strong>替换<strong>yourname</strong></p>
+<p>然后在项目文件夹内打开命令行，输入：<br><code>hexo d</code></p>
+<p>随后按照提示，分别输入自己的Github账号用户名和密码，开始上传。然后通过<strong><a href="http://yourname.github.io/" target="_blank" rel="external">http://yourname.github.io/</a></strong>来访问自己刚刚上传的网站。<br>至此，我们的个人主页搭建就已经初具规模了~~<br>如果对于上述内容你都已经成功掌握了，那我们就可以进入下面的环节，逐步丰富你的个人博客。</p>
 
       
     </div>
@@ -553,7 +589,7 @@ npm -v</code><br>如果结果和下图相似，那么说明Node.js的安装已�
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于github-pages"><span class="nav-number">2.</span> <span class="nav-text">关于github pages</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置"><span class="nav-number">3.</span> <span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置Node-js"><span class="nav-number">3.1.</span> <span class="nav-text">1.配置Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-配置git"><span class="nav-number">3.2.</span> <span class="nav-text">2.配置git</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github账号的配置"><span class="nav-number">4.</span> <span class="nav-text">github账号的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-账号注册"><span class="nav-number">4.1.</span> <span class="nav-text">1.账号注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-新建仓库"><span class="nav-number">4.2.</span> <span class="nav-text">2.新建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-开启gh-pages功能"><span class="nav-number">4.3.</span> <span class="nav-text">3.开启gh-pages功能</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#写在前面"><span class="nav-number">1.</span> <span class="nav-text">写在前面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#关于github-pages"><span class="nav-number">2.</span> <span class="nav-text">关于github pages</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#环境配置"><span class="nav-number">3.</span> <span class="nav-text">环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-配置Node-js"><span class="nav-number">3.1.</span> <span class="nav-text">1.配置Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-配置git"><span class="nav-number">3.2.</span> <span class="nav-text">2.配置git</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#github账号的配置"><span class="nav-number">4.</span> <span class="nav-text">github账号的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-账号注册"><span class="nav-number">4.1.</span> <span class="nav-text">1.账号注册</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-新建仓库"><span class="nav-number">4.2.</span> <span class="nav-text">2.新建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-开启gh-pages功能"><span class="nav-number">4.3.</span> <span class="nav-text">3.开启gh-pages功能</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置Hexo"><span class="nav-number">5.</span> <span class="nav-text">配置Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是hexo？"><span class="nav-number">5.1.</span> <span class="nav-text">1.什么是hexo？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-安装Hexo"><span class="nav-number">5.2.</span> <span class="nav-text">2.安装Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-初始化Hexo"><span class="nav-number">5.3.</span> <span class="nav-text">3.初始化Hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用Hexo"><span class="nav-number">6.</span> <span class="nav-text">使用Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-修改全局配置文件"><span class="nav-number">6.1.</span> <span class="nav-text">1.修改全局配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-hexo部署到github-pages"><span class="nav-number">6.2.</span> <span class="nav-text">2.hexo部署到github pages</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
