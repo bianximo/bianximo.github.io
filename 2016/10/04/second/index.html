@@ -114,7 +114,7 @@
 <meta property="og:image" content="https://xuanwo.org/imgs/opinion/hexo-g.png">
 <meta property="og:image" content="https://xuanwo.org/imgs/opinion/hexo-first-time.png">
 <meta property="og:image" content="https://github.com/bianximo/images/blob/master/%E7%BD%91%E7%AB%99.png?raw=true">
-<meta property="og:updated_time" content="2016-10-04T08:34:08.819Z">
+<meta property="og:updated_time" content="2016-10-04T08:39:58.615Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何在github上搭建个人博客教程">
 <meta name="twitter:description" content="写在前面首先感谢大家参加助力课堂，参加我的这门课程，其实课上我也说过了，我自己也是刚刚接触github pages没多久，觉得有这么一个简易而且免费的平台，不推荐给大家实在可惜，加上上学期也在助力课堂当过讲师（虽然第一次参加比较失败…听课人数个位数），但是这并不能阻挡我！
@@ -351,8 +351,7 @@
 <li><a href="https://nodejs.org/dist/v4.6.0/node-v4.6.0-x86.msi" target="_blank" rel="external">Windows Installer 32-bit</a></li>
 <li><a href="https://nodejs.org/dist/v4.6.0/node-v4.6.0-x64.msi" target="_blank" rel="external">Windows Installer 64-bit</a></li>
 </ul>
-<p>下载完成后双击打开安装包，如图所示：<img src="https://github.com/bianximo/images/blob/master/1.png?raw=true" alt="Node.js安装界面"><br><img src="https://github.com/bianximo/images/blob/master/2.png?raw=true" alt="Node.js安装界面"><br>按照默认的设置，一路next下去就可以很快安装好了。安装好之后，我们按住<em>win+R</em>打开运行，输入<em>cmd</em>，<br><img src="https://xuanwo.org/imgs/opinion/win-run.png" alt="Windows的运行界面">打开命令行窗口，分别输入：<br><code>node -v
-npm -v</code><br>如果结果和下图相似，那么说明Node.js的安装已经成功，如果不相同，那么就需要检查自己的安装过程是否有问题了。<br><img src="https://github.com/bianximo/images/blob/master/3.png?raw=true" alt="Node.js安装测试"><br><strong>到此Node.js就安装好了</strong></p>
+<p>下载完成后双击打开安装包，如图所示：<img src="https://github.com/bianximo/images/blob/master/1.png?raw=true" alt="Node.js安装界面"><br><img src="https://github.com/bianximo/images/blob/master/2.png?raw=true" alt="Node.js安装界面"><br>按照默认的设置，一路next下去就可以很快安装好了。安装好之后，我们按住<em>win+R</em>打开运行，输入<em>cmd</em>，<br><img src="https://xuanwo.org/imgs/opinion/win-run.png" alt="Windows的运行界面">打开命令行窗口，分别输入：<br><code>node -v</code><br><code>npm -v</code><br>如果结果和下图相似，那么说明Node.js的安装已经成功，如果不相同，那么就需要检查自己的安装过程是否有问题了。<br><img src="https://github.com/bianximo/images/blob/master/3.png?raw=true" alt="Node.js安装测试"><br><strong>到此Node.js就安装好了</strong></p>
 <h2 id="2-配置git"><a href="#2-配置git" class="headerlink" title="2.配置git"></a>2.配置git</h2><p>和Node.js安装一样，前往git官网下载相应版本即可。</p>
 <ul>
 <li><a href="https://github-cloud.s3.amazonaws.com/releases/23216272/c9507cb6-71bd-11e6-92c2-e9f873a99794.exe?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20161004%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20161004T071354Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=443c779c6ba18d6a7b68e72f96e513f93bec7cab0b184d654aa8e4d3b5d779c5&amp;X-Amz-SignedHeaders=host&amp;actor_id=13324167&amp;response-content-disposition=attachment%3B%20filename%3DGit-2.10.0-32-bit.exe&amp;response-content-type=application%2Foctet-stream" target="_blank" rel="external">git installer 32-bit</a></li>
@@ -378,13 +377,13 @@ npm -v</code><br>如果结果和下图相似，那么说明Node.js的安装已�
 <p>其实hexo就是一个作业本，但是它的款式却多种多样（主题），它可以帮你生成你的每一篇日志，并且可以很简单的帮你发布~下面我们开始配置它。</p>
 <h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2.安装Hexo"></a>2.安装Hexo</h2><p>在本地磁盘的一个合适的位置新建一个文件夹，它就是你博客的本地映射了，命名随意，最好不要用中文。然后双击进入这个文件夹，按住<strong>shift+鼠标右键，</strong>选择“在此处打开命令行”，当然你也可以用win+R，输入cmd，然后一步一步的cd到这个文件夹的目录，但是需要耗费很多时间啊！这也是一个省时省力的小技巧~<br>接下来，输入：<br><code>npm install hexo-cli -g</code></p>
 <p>然后你将会看到:<img src="https://xuanwo.org/imgs/opinion/npm-install-hexo-cli.png" alt="安装hexo-cli">可能你会看到一个WARN，但是不用担心，这不会影响你的正常使用。然后输入</p>
-<p>npm install hexo –save</p>
-<p>然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。在命令行中输入：<br>hexo -v</p>
+<p><code>npm install hexo --save</code></p>
+<p>然后你会看到命令行窗口刷了一大堆白字，下面我们来看一看Hexo是不是已经安装好了。在命令行中输入：<br><code>hexo -v</code></p>
 <p>如果你看到了如图文字，则说明已经安装成功了。<img src="https://xuanwo.org/imgs/opinion/hexo-v.png" alt="Hexo测试"><br><a href="https://xuanwo.org/2015/03/26/hexo-intor/#初始化Hexo" target="_blank" rel="external"></a></p>
-<h2 id="3-初始化Hexo"><a href="#3-初始化Hexo" class="headerlink" title="3.初始化Hexo"></a>3.初始化Hexo</h2><p>接着上面的操作，输入：<br>hexo init</p>
-<p>如图：<img src="https://xuanwo.org/imgs/opinion/hexo-init.png" alt="hexo初始化">然后输入：<br>npm install</p>
-<p>之后npm将会自动安装你需要的组件，只需要等待npm操作即可。<br><a href="https://xuanwo.org/2015/03/26/hexo-intor/#首次体验Hexo" target="_blank" rel="external"></a>首次体验Hexo<br>继续操作，同样是在命令行中，输入：<br>hexo g</p>
-<p>如图：<img src="https://xuanwo.org/imgs/opinion/hexo-g.png" alt="hexo渲染">然后输入：<br>hexo s</p>
+<h2 id="3-初始化Hexo"><a href="#3-初始化Hexo" class="headerlink" title="3.初始化Hexo"></a>3.初始化Hexo</h2><p>接着上面的操作，输入：<br><code>hexo init</code></p>
+<p>如图：<img src="https://xuanwo.org/imgs/opinion/hexo-init.png" alt="hexo初始化">然后输入：<br><code>npm install</code></p>
+<p>之后npm将会自动安装你需要的组件，只需要等待npm操作即可。<br><a href="https://xuanwo.org/2015/03/26/hexo-intor/#首次体验Hexo" target="_blank" rel="external"></a>首次体验Hexo<br>继续操作，同样是在命令行中，输入：<br><code>hexo g</code></p>
+<p>如图：<img src="https://xuanwo.org/imgs/opinion/hexo-g.png" alt="hexo渲染">然后输入：<br><code>hexo s</code></p>
 <p>然后会提示：<br>INFO Hexo is running at <a href="http://0.0.0.0:4000/" target="_blank" rel="external">http://0.0.0.0:4000/</a>. Press Ctrl+C to stop.</p>
 <p>在浏览器中打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br>，你将会看到：<img src="https://xuanwo.org/imgs/opinion/hexo-first-time.png" alt="hexo初体验">到目前为止，Hexo在本地的配置已经全都结束了。</p>
 <h1 id="使用Hexo"><a href="#使用Hexo" class="headerlink" title="使用Hexo"></a>使用Hexo</h1><blockquote>
@@ -392,13 +391,10 @@ npm -v</code><br>如果结果和下图相似，那么说明Node.js的安装已�
 </blockquote>
 <h2 id="1-修改全局配置文件"><a href="#1-修改全局配置文件" class="headerlink" title="1.修改全局配置文件"></a>1.修改全局配置文件</h2><p>此时打开你的本地文件夹，会发现里面已经有很多东西了，我们会一步一步的告诉大家这些都有什么作用。<br>首先我们可以修改全局配置文件，右键文件<strong>_config.yml</strong>，用你的文本编辑器打开它，进行下面的这些选项的设置。<br><em>此段落引用自<a href="http://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="external">Hexo官方文档</a></em><br><img src="https://github.com/bianximo/images/blob/master/%E7%BD%91%E7%AB%99.png?raw=true" alt="修改全局配置文件"><br>这里的配置大多不用现在就更改，等到后面我们套用主题时再修改也不迟~先进行下一步吧！</p>
 <h2 id="2-hexo部署到github-pages"><a href="#2-hexo部署到github-pages" class="headerlink" title="2.hexo部署到github pages"></a>2.hexo部署到github pages</h2><p>这是目前为止非常关键的一步，也是重点和难点，大家如果遇到困难了一定要多问哦！</p>
-<p>首先，你需要为自己配置身份信息，打开命令行，然后输入：<br><code>git config --global user.name &quot;yourname&quot;
-git config --global user.email &quot;youremail&quot;</code><br>其中，<strong>yourname</strong>和<strong>youremail</strong>分别为你github的<strong>username</strong>和<strong>邮箱</strong></p>
+<p>首先，你需要为自己配置身份信息，打开命令行，然后输入：<br><code>git config --global user.name &quot;yourname&quot;</code><br><code>git config --global user.email &quot;youremail&quot;</code><br>其中，<strong>yourname</strong>和<strong>youremail</strong>分别为你github的<strong>username</strong>和<strong>邮箱</strong></p>
 <p>接下来使用git方式进行部署，执行<br><code>npm install hexo-deployer-git --save</code><br>来安装所需的插件</p>
-<p>同样在_config.yml文件中，找到Deployment，然后按照如下修改：<br><code>deploy: 
-    type: git 
-    repo: git@github.com:yourname/yourname.github.io.git 
-    branch: master</code><br>注意用你的<strong>Username</strong>替换<strong>yourname</strong></p>
+<p>同样在_config.yml文件中，找到Deployment，然后按照如下修改：<br><code>deploy:</code><br><code>type: git</code><br><code>repo: git@github.com:yourname/yourname.github.io.git</code><br><code>branch: master</code></p>
+<p>注意用你的<strong>Username</strong>替换<strong>yourname</strong></p>
 <p>然后在项目文件夹内打开命令行，输入：<br><code>hexo d</code></p>
 <p>随后按照提示，分别输入自己的Github账号用户名和密码，开始上传。然后通过<strong><a href="http://yourname.github.io/" target="_blank" rel="external">http://yourname.github.io/</a></strong>来访问自己刚刚上传的网站。<br>至此，我们的个人主页搭建就已经初具规模了~~<br>如果对于上述内容你都已经成功掌握了，那我们就可以进入下面的环节，逐步丰富你的个人博客。</p>
 
