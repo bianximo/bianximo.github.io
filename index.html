@@ -311,18 +311,16 @@
 
       
         
-          
-            <p><img src="https://github.com/bianximo/images/blob/master/wallhaven-365999.jpg?raw=true" alt=""></p>
-<h1 id="如何提交一篇新的文章？？"><a href="#如何提交一篇新的文章？？" class="headerlink" title="如何提交一篇新的文章？？"></a>如何提交一篇新的文章？？</h1><p>使用hexo给自己的博客写文章是非常方便的，但是它不像我们平时写文章一样直接编辑保存就好了，hexo因为是使用静态加载的技术，我们需要掌握另一种语言，它就是<strong>“markdown”</strong>，大家不用害怕，markdown不像编程语言那么难以掌握，反而它是一种简单易用的写作语言，关于它的使用，大家可以看下面这篇文章，10min掌握markdown十分轻松！<br><a href="http://sspai.com/25137" target="_blank" rel="external">认识与入门 Markdown</a>，同时为大家推荐这篇文章的出处，少数派，一个不错的IT网站~<br>至于markdown编辑器就多种多样了，大家自己选择，我使用的是简书的在线编辑器，很方便哦~</p>
-<h1 id="文章写好了，之后呢？"><a href="#文章写好了，之后呢？" class="headerlink" title="文章写好了，之后呢？"></a>文章写好了，之后呢？</h1><p>我们首先在hexo根目录下找到<strong>source</strong>文件夹，里面有一个<strong>_post</strong>文件夹，打开之后，如果你没有写过文章，就会有一个文件名叫<strong>“first.md”</strong>，这就是hexo默认为你生成的一篇文章，如果不想留着它就可以直接删除了。<br>然后，我们新建一个markdown文件，名称例如<strong>xxx.md</strong>，将刚才在编辑器里编辑好的文章粘贴进去，保存就可以了~<br>需要注意，在开头还需要加入下面这一段，它可以让你的文章被hexo识别，第一行是文章名称的意思，第二行是编辑时间，第三行是分类，第四行则是在此处设定是否开启目录，需要主题支持。<br><code>---
-title: 初次见面，请多关照
-date: 2016-9-6 20:42:00
-categories: 随感
-toc: true
----</code><br>还有一个功能大家可以选择使用，就是可以选择在你博客的首页里面不显示完成文章，而是显示一部分，下面就是“阅读全文”，需要点击才能进入文章阅读全文。这个功能也很简单，只需要在你想分开的地方加上下面这句,<br><code>&lt;!-- more --&gt;</code><br>hexo就会自动帮你生成文章了~</p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>hexo文件夹做了任何更改我们都需要在命令行输入命令<strong>hexo g</strong>来重新生成博客，用<strong>hexo d</strong>再将新博客部署到github上。<br><strong>赶快动手吧！</strong></p>
-
-          
+          <p><img src="https://github.com/bianximo/images/blob/master/wallhaven-365999.jpg?raw=true" alt=""></p>
+<h1 id="如何提交一篇新的文章？？"><a href="#如何提交一篇新的文章？？" class="headerlink" title="如何提交一篇新的文章？？"></a>如何提交一篇新的文章？？</h1><p>使用hexo给自己的博客写文章是非常方便的，但是它不像我们平时写文章一样直接编辑保存就好了，hexo因为是使用静态加载的技术，我们需要掌握另一种语言，它就是<strong>“markdown”</strong>，大家不用害怕，markdown不像编程语言那么难以掌握，反而它是一种简单易用的写作语言，关于它的使用，大家可以看下面这篇文章，10min掌握markdown十分轻松！<br><a href="http://sspai.com/25137">认识与入门 Markdown</a>，同时为大家推荐这篇文章的出处，少数派，一个不错的IT网站~<br>至于markdown编辑器就多种多样了，大家自己选择，我使用的是简书的在线编辑器，很方便哦~</p>
+<h1 id="文章写好了，之后呢？"><a href="#文章写好了，之后呢？" class="headerlink" title="文章写好了，之后呢？"></a>文章写好了，之后呢？</h1><p>我们首先在hexo根目录下找到<strong>source</strong>文件夹，里面有一个<strong>_post</strong>文件夹，打开之后，如果你没有写过文章，就会有一个文件名叫<strong>“first.md”</strong>，这就是hexo默认为你生成的一篇文章，如果不想留着它就可以直接删除了。<br>然后，我们新建一个markdown文件，名称例如<strong>xxx.md</strong>，将刚才在编辑器里编辑好的文章粘贴进去，保存就可以了~<br>需要注意，在开头还需要加入下面这一段，它可以让你的文章被hexo识别，第一行是文章名称的意思，第二行是编辑时间，第三行是分类，第四行则是在此处设定是否开启目录，需要主题支持。</p>
+<h2 id=""><a href="#" class="headerlink" title="`"></a>`</h2><p>title: 初次见面，请多关照<br>date: 2016-9-6 20:42:00<br>categories: 随感</p>
+<h2 id="toc-true"><a href="#toc-true" class="headerlink" title="toc: true"></a>toc: true</h2><p><code>还有一个功能大家可以选择使用，就是可以选择在你博客的首页里面不显示完成文章，而是显示一部分，下面就是“阅读全文”，需要点击才能进入文章阅读全文。这个功能也很简单，只需要在你想分开的地方加上下面这句,</code>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/10/19/4/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
