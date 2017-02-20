@@ -10,7 +10,7 @@
       </transition>
     </main>
     <footer class="copyright">
-      powerd by <a href="https://github.com/Ma63d/leetcode-viewer" target="_blank">leetcode-viewer</a>
+      <a></a>
     </footer>
   </div>
 </template>
