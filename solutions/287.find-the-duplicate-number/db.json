@@ -1,0 +1,1 @@
+{"java":"public class Solution {\r\n    public int findDuplicate(int[] nums) {\r\n        int length = nums.length;\r\n        for(int i=0;i<length;i++){\r\n            for(int j=i+1;j<length;j++){\r\n                if(nums[i]==nums[j])return nums[i];\r\n            }\r\n        }\r\n        return 0;\r\n    }\r\n}"}
