@@ -6,7 +6,7 @@ module.exports = {
   // leetcode-spider 是我写的一个leetcode源码爬虫, JS写的leetcode解题源码爬虫,
   // 自动地将你的leetcode解题源码爬取下来,生成本地代码、题目文件.并生成本项目运行时所需的部分JSON文件.
   // git地址在此: https://github.com/Ma63d/leetcode-viewer
-  sourcePath: './solutions/',
+  sourcePath: './si/',
   // 这一项会用在封面页的介绍文字上
   // 显示为 {{author}} 's Leetcode solutions
   // 如果你不想显示你的名字,就保持 null, 介绍页面上会显示 My Leetcode solutions
